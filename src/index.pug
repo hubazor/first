@@ -1,3 +1,5 @@
+include blocks/complex/header/header
+
 doctype html
 html(lang="en")
   head
@@ -11,7 +13,7 @@ html(lang="en")
     title hotel
     style
       include styles/main.css
-  include blocks/complex/header/header
+  +header
   body
     p Body section
   include blocks/complex/footer/footer
