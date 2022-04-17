@@ -1,4 +1,4 @@
-include blocks/complex/header/header
+include ./blocks/primitives/input/input
 
 doctype html
 html(lang="en")
@@ -12,8 +12,10 @@ html(lang="en")
     )
     title hotel
     style
-      include styles/main.css
-  +header
+      include styles/main.scss
   body
-    p Body section
-  include blocks/complex/footer/footer
+    include blocks/complex/header/header.pug
+    main.main main
+      +input
+    include blocks/complex/footer/footer.pug
+
